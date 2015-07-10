@@ -1,0 +1,23 @@
+---
+
+project_name: news_app_push_tool
+application_name: news_app_push_tool
+
+http_server_name: "{{ inventory_hostname }}"
+
+git_branch: master
+
+ssl_path: /etc/ssl/bf
+ssl_key_path: "{{ssl_path}}/bf.key"
+ssl_cert_path: "{{ssl_path}}/bf.crt"
+
+base_path: "/buzzfeed"
+
+project_path: "{{ base_path }}/{{ project_name }}"
+application_path: "{{ base_path }}/{{ project_name }}"
+
+application_log_dir: "{{ base_path }}/logs"
+requirements_file: "{{ project_path }}/requirements/common.txt"
+
+http_user: "{{ application_name }}"
+http_group: www-data

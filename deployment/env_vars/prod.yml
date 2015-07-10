@@ -1,0 +1,9 @@
+---
+
+domain: 'https://push-news-app-cms-prod.buzzfeed.com'
+git_branch: master
+notification_targets: ["Public Beta / Prod", "Beta"]
+mongo_url: news-app-cms-prod-mongo0.buzzfeed.com,news-app-cms-prod-mongo1.buzzfeed.com,news-app-cms-prod-marbiter.buzzfeed.com/salt-n-pepa
+db_hosts: [ "news-app-cms-prod-mongo0.buzzfeed.com", "news-app-cms-prod-mongo1.buzzfeed.com", "news-app-cms-prod-marbiter.buzzfeed.com"]
+s3_hostname: 'http://newsappcms-prod-ec.buzzfeed.com'
+log_dir: "/var/log/buzzfeed/snp/"

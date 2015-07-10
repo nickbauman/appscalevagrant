@@ -1,0 +1,23 @@
+[webservers-stage]
+news-app-cms-stage-push0.buzzfeed.com
+news-app-cms-stage-push1.buzzfeed.com
+
+[webservers-prod]
+news-app-cms-prod-push0.buzzfeed.com
+news-app-cms-prod-push1.buzzfeed.com
+
+[webservers-qa]
+news-app-qa.buzzfeed.com
+
+[webservers-beta]
+news-app-beta.buzzfeed.com
+
+[webservers-local]
+192.168.33.16 ansible_ssh_private_key_file=.vagrant/machines/web/virtualbox/private_key
+
+[dbslaves-local]
+192.168.33.18 ansible_ssh_private_key_file=.vagrant/machines/db2/virtualbox/private_key
+192.168.33.19 ansible_ssh_private_key_file=.vagrant/machines/db3/virtualbox/private_key
+
+[dbmaster-local]
+192.168.33.17 ansible_ssh_private_key_file=.vagrant/machines/db1/virtualbox/private_key

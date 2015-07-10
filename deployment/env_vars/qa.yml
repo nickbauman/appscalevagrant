@@ -1,0 +1,8 @@
+---
+
+domain: 'http://news-app-qa.buzzfeed.com'
+git_branch: master
+notification_targets: ["Dev"]
+mongo_url: news-app-qa.buzzfeed.com/salt-n-pepa
+db_hosts: [ "news-app-qa.buzzfeed.com" ]
+s3_hostname: 'http://newsappcms-dev-ec.buzzfeed.com'

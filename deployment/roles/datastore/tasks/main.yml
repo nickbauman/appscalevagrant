@@ -1,0 +1,6 @@
+---
+
+- name: Set up configuration file for datastore node
+  template: src=datastore.conf.j2
+            dest=/etc/datastore.conf
+

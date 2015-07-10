@@ -1,0 +1,8 @@
+---
+
+http_server_name: 192.168.33.16
+git_branch: NEWSCMS-447_fix_notifications_without_urls
+notification_targets: ["Dev"]
+mongo_url: 192.168.33.17,192.168.33.18,192.168.33.19/salt-n-pepa
+db_hosts: [ "192.168.33.17", "192.168.33.18", "192.168.33.19"]
+s3_hostname: 'http://newsappcms-dev-ec.buzzfeed.com'

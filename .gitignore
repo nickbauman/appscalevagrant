@@ -1,0 +1,11 @@
+.idea
+deployment/.vagrant
+config.json
+node_modules
+.DS_Store
+logs
+config.json
+npm-debug.log
+alpha-config.json
+
+dev-config.json

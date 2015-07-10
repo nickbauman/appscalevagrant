@@ -1,0 +1,18 @@
+---
+
+- name: Install base packages for host
+  apt: name={{ item }} update_cache={{ update_apt_cache }} force=yes state=installed
+  with_items:
+    - wget
+    - git
+    - python
+  tags: packages
+
+- name: Install appscale installer script on hosts
+  copy: src=templates/appscale_install.sh dest=/root
+
+- name: Run the installer
+  command: appscale_installer.sh
+  args:
+    chdir: /root
+    executable: /bin/sh

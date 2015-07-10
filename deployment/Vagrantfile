@@ -1,0 +1,39 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.define "host1" do |host1|
+    host1.vm.box = "ubuntu/precise64"
+    host1.vm.hostname = "host1"
+    host1.vm.network :private_network, ip: "192.168.33.17"
+
+    host1.vm.provider :virtualbox do |vb|
+      vb.customize ["modifyvm", :id, "--name", "host1", "--memory", "1024"]
+    end
+  end
+
+  config.vm.define "host2" do |host2|
+    host2.vm.box = "ubuntu/precise64"
+    host2.vm.hostname = "host2"
+    host2.vm.network :private_network, ip: "192.168.33.18"
+
+    host2.vm.provider :virtualbox do |vb|
+      vb.customize ["modifyvm", :id, "--name", "host2", "--memory", "1024"]
+    end
+  end
+
+  config.vm.define "host3" do |host3|
+    host3.vm.box = "ubuntu/precise64"
+    host3.vm.hostname = "host3"
+    host3.vm.network :private_network, ip: "192.168.33.19"
+
+    host3.vm.provider :virtualbox do |vb|
+      vb.customize ["modifyvm", :id, "--name", "host3", "--memory", "1024"]
+    end
+  end
+
+end
